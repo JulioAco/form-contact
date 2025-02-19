@@ -1,33 +1,25 @@
 <head>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JulioAco/form-contact@main/styles.css">
 </head>
 <script src="myscripts.js">https://cdn.jsdelivr.net/gh/JulioAco/form-contact@main/script.js
 </script>
-<form
-  action="https://formspree.io/f/{FORM_ID}"
-  class="fs-form"
-  target="_top"
-  method="POST"
->
-  <div class="fs-field">
-    <label class="fs-label" for="name">Tu Nombre</label>
-    <input class="fs-input" id="name" name="name" required />
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="email">Email</label>
-    <input class="fs-input" id="email" name="email" required />
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="message">Mensaje</label>
-    <textarea
-      class="fs-textarea"
-      id="message"
-      name="message"
-      required
-    ></textarea>
-    <p class="fs-description">Dejanos tu opinión por aquí</p>
-  </div>
-  <div class="fs-button-group">
-    <button class="fs-button" type="submit">Submit</button>
-  </div>
-</form>
+<body>
+  <form id="contact-form" class="fs-form" onsubmit="sendEmail(event)">
+    <div class="fs-field">
+      <label class="fs-label" for="name">Nombre</label>
+      <input class="fs-input" id="name" name="name" required />
+    </div>
+    <div class="fs-field">
+      <label class="fs-label" for="email">Email</label>
+      <input class="fs-input" id="email" name="email" required />
+    </div>
+    <div class="fs-field">
+      <label class="fs-label" for="message">Mensaje</label>
+      <textarea class="fs-textarea" id="message" name="message" required></textarea>
+      <p class="fs-description">¿De qué le gustaría hablar?</p>
+    </div>
+    <div class="fs-button-group">
+      <button class="fs-button" type="submit">Enviar</button>
+    </div>
+  </form>
+</body>
