@@ -138,7 +138,7 @@ fieldset {
 }
 
 .fs-button:hover {
-  background-color: var(--color-primary-active);
+  background-color:#9900ff;
 }
 
 .fs-button:focus-visible {
