@@ -124,7 +124,7 @@ fieldset {
 }
 
 .fs-button {
-  background-color: var(--color-primary);
+  background-color: #9f30be;
   border-radius: 9999px;
   color: white;
   cursor: pointer;
